@@ -12,6 +12,10 @@ function Form() {
       "Califs" : ''
       });
 
+      function reload(event) {
+        window.location.reload();
+      }
+
       function handleSubmit(event) {
         event.preventDefault()
         console.log(form)
@@ -30,7 +34,7 @@ function Form() {
     <form onSubmit={handleSubmit}>
     <label>
     Nombre
-    <input 
+    <input
     value={form.Name}
     onChange={e =>{
       setForm({
@@ -40,7 +44,7 @@ function Form() {
     }}
     />
     </label>
-    <br/>  
+    <br/>
     <label>
     Pelicula
     </label>
@@ -52,7 +56,7 @@ function Form() {
       setForm({
         ...form,
         Type: "Pelicula"
-        
+
       })
     }}
     />
@@ -68,14 +72,14 @@ function Form() {
       setForm({
         ...form,
         Type: "Serie",
-        
+
       })
     }}
     />
     <br/>
     <label>
     Genero
-    <input 
+    <input
     value={form.Gender}
     onChange={e =>{
       setForm({
@@ -88,7 +92,7 @@ function Form() {
     <br></br>
     <label>
     Sinopsis
-    <input 
+    <input
     value={form.Sinopsis}
     onChange={e =>{
       setForm({
@@ -105,7 +109,7 @@ function Form() {
     <input
     type = "number"
     min = "0"
-    max = "10" 
+    max = "10"
     value={form.Califs}
     onChange={e =>{
       setForm({
@@ -114,8 +118,9 @@ function Form() {
       })
     }}
     />
-    <input 
+    <input
     type = "submit"
+    onClick={reload}
     />
     </form>
   )

@@ -24,11 +24,11 @@ const SelectType = (event,Type) => {
             console.error(error)
         })
         }, [])
-    
+
     return (
         <div>
-        <button onClick={event => SelectType(event, "Pelicula")}>Peliculas</button>
-        <button onClick={event => SelectType(event, "Serie")}>Series</button>
+        <button class="btn btn-danger" onClick={event => SelectType(event, "Pelicula")}>Peliculas</button>
+        <button class="btn btn-primary" onClick={event => SelectType(event, "Serie")}>Series</button>
         {DisplayedItems}
         </div>
     );
