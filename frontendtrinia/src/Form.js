@@ -31,6 +31,7 @@ function Form() {
       }
 
   return (
+    <div id="ocultar">
     <form onSubmit={handleSubmit}>
     <label>
     Nombre
@@ -123,6 +124,7 @@ function Form() {
     onClick={reload}
     />
     </form>
+  </div>
   )
 }
 

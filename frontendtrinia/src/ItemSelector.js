@@ -27,9 +27,11 @@ const SelectType = (event,Type) => {
 
     return (
         <div>
-        <button class="btn btn-danger" onClick={event => SelectType(event, "Pelicula")}>Peliculas</button>
-        <button class="btn btn-primary" onClick={event => SelectType(event, "Serie")}>Series</button>
-        {DisplayedItems}
+        <button class="btn btn-danger" onClick={event => SelectType(event, "Pelicula") }>Peliculas</button>
+        <button class="btn btn-primary right" onClick={event => SelectType(event, "Serie")}>Series</button>
+          <div class="text-center mb-3">
+          {DisplayedItems}
+          </div>
         </div>
     );
 }
