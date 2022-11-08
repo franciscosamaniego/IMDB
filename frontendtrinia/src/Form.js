@@ -119,7 +119,8 @@ function Form() {
       })
     }}
     />
-    <input
+    <br></br>
+    <input class="btn btn-success"
     type = "submit"
     onClick={reload}
     />
