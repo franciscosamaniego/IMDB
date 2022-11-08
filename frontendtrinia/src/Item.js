@@ -1,6 +1,6 @@
 const Item = props => {
     return (
-        <div>
+        <div className="form">
             <h3>{props.Name}</h3>
             <ul>
                 <li>Genero: {props.Gender}</li>
@@ -9,6 +9,6 @@ const Item = props => {
             </ul>
         </div>
     )
-} 
+}
 
 export default Item

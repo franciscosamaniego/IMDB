@@ -32,7 +32,7 @@ function Form() {
 
   return (
     <div id="ocultar">
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="centrar">
     <label>
     Nombre
     <input
